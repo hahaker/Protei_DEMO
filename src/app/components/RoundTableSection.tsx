@@ -1,7 +1,4 @@
 import { motion } from 'motion/react';
-import imgMeetingRoom from "figma:asset/147613f649e094ad6e7d1a8392e3491dd22dd2ed.png";
-import imgPodium from "figma:asset/13701238e655a091bd82586b8427e6e6171c9d73.png";
-import { ParallaxImage } from './ParallaxImage';
 
 interface TopicProps {
   badge: string;
@@ -130,11 +127,7 @@ export function RoundTableSection() {
             whileHover={{ scale: 1.02 }}
             className="relative rounded-[12px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
           >
-            <ParallaxImage 
-              src={imgMeetingRoom} 
-              alt="Meeting room" 
-              className="w-full h-auto aspect-[4/3] object-cover"
-            />
+            <div className="w-full aspect-[4/3] bg-gradient-to-br from-[rgba(0,109,239,0.15)] to-[rgba(114,199,252,0.08)]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,12,20,0.6)] to-transparent pointer-events-none" />
           </motion.div>
 
@@ -146,11 +139,7 @@ export function RoundTableSection() {
             whileHover={{ scale: 1.02 }}
             className="relative rounded-[12px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
           >
-            <ParallaxImage 
-              src={imgPodium} 
-              alt="Podium" 
-              className="w-full h-auto aspect-[4/3] object-cover"
-            />
+            <div className="w-full aspect-[4/3] bg-gradient-to-br from-[rgba(0,109,239,0.15)] to-[rgba(114,199,252,0.08)]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,12,20,0.6)] to-transparent pointer-events-none" />
           </motion.div>
         </div>
